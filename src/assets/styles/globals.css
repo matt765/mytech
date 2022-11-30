@@ -1,0 +1,70 @@
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --main-blue: #3cacbf;
+  --second-blue: #7de5ed;
+  --main-black: #141414;
+  --main-gray: #ededed;
+  --secondary-gray: #efefef;
+  --dark-gray: #7e7e7e;
+  --main-white: #fdfefe;
+  --secondary-white: #f6f7f6;
+  --main-yellow: #facd05;
+  --main-red: #d51243;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  overflow: hidden;
+  margin-top: 7rem;
+  line-height: 1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: var(--main-black);
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 144rem;
+  padding: 0 4.8rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  border: 1px solid rgb(60, 172, 191, 0.5);
+  padding: 1.3rem;
+  background-color: var(--main-white) !important;
+  color: var(--main-black) !important;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 2.4rem;
+  }
+}
